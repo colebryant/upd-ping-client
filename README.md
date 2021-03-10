@@ -3,7 +3,7 @@ with the provided ping server. The functionality emulates ICMP echo requests and
 replies (which are performed over raw IP sockets - see RFC 792) via UDP messages.
 At a high level, the ping client sends byte-encoded ping request messages (which
 include a calculated checksum) to the ping server the given "count" times.
-The ping server responds with an echo reply, which is received, decoded, and
+The ping server responds with an echo reply which is received, decoded, and
 verified by the client. Informational messages are printed during the message
 exchange as well as relevant statistics. Additionally, my implementation 
 spawns multiple threads to more efficiently send and receive the ping
